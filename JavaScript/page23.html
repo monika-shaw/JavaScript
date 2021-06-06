@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+  <div id="one">tom
+  <button onclick="myfun('one')">Print the Page 1</button>
+  </div>
+
+
+  <div id="two">jerry
+   <button onclick="myfun('two')">Print the Page 2</button>
+  </div>
+
+    
+    <div id="three">edira
+    <button onclick="myfun('three')">Print the Page 3</button>
+    </div>
+      
+
+   <button onclick="myhome()">Home</button>
+
+  <script type="text/javascript">
+
+  function myhome(){
+
+    window.print()
+  }
+
+
+  function myfun(paravalue){
+      
+        var backup= document.body.innerHTML
+        var divcontent = document.getElementById(paravalue).innerHTML
+        document.body.innerHTML=divcontent
+        window.print()
+        document.body.innerHTML=backup
+  }
+
+  
+  
+    </script>
+</body>
+</html>

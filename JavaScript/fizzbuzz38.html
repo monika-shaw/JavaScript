@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    //  var i=1
+    //  while(i<=100){
+    //     if((i%3)==0 && (i%5)==0)
+    //     {
+    //         console.log("fizzbuzz")
+    //     }
+    //     if((i%3)==0)
+    //     {
+    //         console.log("fizz")
+    //     }
+    //     else if((i%5)==0)
+    //     {
+    //         console.log("buzz")
+    //     }
+       
+    //     else{
+    //      console.log(i+"\t")
+    //     }
+    //      i++
+    //  }
+
+
+
+    var fizzbuzz=[]
+    var i=1
+    function fiz(){
+     while(i<=100){
+        if((i%3)==0 && (i%5)==0)
+        {
+            fizzbuzz.push("Fizzbuzz")
+            
+        }
+        if((i%3)==0)
+        {
+            fizzbuzz.push("Fizz")
+        }
+        else if((i%5)==0)
+        {
+            fizzbuzz.push("buzz")
+        }
+       
+        else{
+            fizzbuzz.push(i)
+        }
+         i++
+     }
+     console.log(fizzbuzz)
+}
+
+fiz()
+
+
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+  Reverse
+    </title>
+</head>
+<body>
+  
+     <h2 style="text-align: center;">Time with decrementing for loop</h2>
+
+  <input type="text", name="" id="rev" onkeyup="reversestring()">
+  <input type="text", name="" id="show">
+  
+  
+  <script type="text/javascript">
+
+
+ function reversestring(){
+
+   var str=document.getElementById('rev').value
+   
+   var newstr=""
+
+
+
+   for( var i= str.length-1;i>=0;i--)
+   {
+       newstr+= str[i]
+   }
+   document.getElementById('show').value=newstr
+
+ }
+   
+    </script>
+</body>
+</html>
+
+
+

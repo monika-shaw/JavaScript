@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+
+    <button onclick="clearInterval(clock)">Click Me</button><br><br>
+
+    <p id="show"></p>
+
+
+    <script type="text/javascript">
+
+   // var d= new Date()
+    //var stud = d.toLocaleTimeString()
+   //document.write(stud)
+   // document.write(d)
+
+
+   var clock= setInterval(clocktiming,1000)
+  
+
+   function clocktiming()
+   {
+       var d = new Date()
+       var stud = d.toLocaleTimeString()
+       //document.write(stud)
+       document.getElementById('show').innerHTML=stud
+   }
+   
+    </script>
+</body>
+</html>
+
+
+

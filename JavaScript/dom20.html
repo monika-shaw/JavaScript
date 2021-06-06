@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+
+    <p id="tom">Tom is boy</p>
+    <p class="student">Maths student</p>
+    <p class="student">Science Student</p>
+    <p class="student">English student</p>
+
+
+
+    <ul><li>Boy</li>
+        <li>Girl</li>
+        <li>Both are students</li>
+
+
+    </ul>
+    <script type="text/javascript">
+
+
+        var child=document.body.children;
+        console.log(child)
+
+    //add a new child
+
+    var para= document.createElement("p")
+    var textNode=document.createTextNode("This is JavaScript")
+    para.appendChild(textNode)
+    console.log(para)
+
+
+
+    document.body.appendChild(para)
+
+
+    //access first child and last child
+
+     var list = document.querySelector("ul")
+     console.log(list)
+
+
+     console.log(list.firstChild)
+
+     console.log(list.lastChild)
+
+
+     var fsibling=tom.nextElementSibling
+     console.log(fsibling)
+
+     var fsibling=tom.nextElementSibling.nextElementSibling
+     console.log(fsibling)
+
+     console.log(list.parentNode)
+
+
+
+        
+    </script>
+</body>
+</html>
+
+<html>
+
+
